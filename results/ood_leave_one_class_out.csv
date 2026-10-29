@@ -1,0 +1,7 @@
+held_out_class,n_unknown,AUROC,detected_at_0_50,known_rejected_at_0_50
+Aging,80,0.978202479338843,0.0375,0.0
+Healthy,350,0.851321961620469,0.0,0.0
+Open-Circuit,60,1.0,1.0,0.0
+Overheating,45,0.8686631944444445,0.0,0.0
+Shading/Soiling,100,0.9448290598290598,0.0,0.0
+Short-Circuit,50,1.0,0.42,0.0

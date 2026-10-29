@@ -1,0 +1,837 @@
+{
+  "demo": false,
+  "seed": 42,
+  "data_source": [
+    "SYNTHETIC_IEEE_DATAPORT_SCHEMA"
+  ],
+  "n_known": 685,
+  "n_unknown": 15,
+  "class_counts": {
+    "Healthy": 350,
+    "Shading/Soiling": 100,
+    "Aging": 80,
+    "Open-Circuit": 60,
+    "Short-Circuit": 50,
+    "Overheating": 45,
+    "Unknown": 15
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.2.1",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "shap": "0.46.0"
+  },
+  "baselines": {
+    "Random Forest (100)": {
+      "Acc (5x3 CV)": "0.9849 \u00b1 0.0112",
+      "Macro-P": "0.9913 \u00b1 0.0070",
+      "Macro-R": "0.9867 \u00b1 0.0116",
+      "Macro-F1": "0.9886 \u00b1 0.0086",
+      "Acc (single 5-fold)": "0.9839",
+      "Train s": "0.532",
+      "Pred ms/sample": "0.6553"
+    },
+    "Logistic Regression": {
+      "Acc (5x3 CV)": "0.9985 \u00b1 0.0030",
+      "Macro-P": "0.9995 \u00b1 0.0010",
+      "Macro-R": "0.9983 \u00b1 0.0035",
+      "Macro-F1": "0.9989 \u00b1 0.0023",
+      "Acc (single 5-fold)": "0.9985",
+      "Train s": "0.027",
+      "Pred ms/sample": "0.0118"
+    },
+    "SVM (RBF)": {
+      "Acc (5x3 CV)": "0.9990 \u00b1 0.0026",
+      "Macro-P": "0.9997 \u00b1 0.0008",
+      "Macro-R": "0.9989 \u00b1 0.0029",
+      "Macro-F1": "0.9993 \u00b1 0.0019",
+      "Acc (single 5-fold)": "1.0000",
+      "Train s": "0.007",
+      "Pred ms/sample": "0.0191"
+    },
+    "k-NN (k=5)": {
+      "Acc (5x3 CV)": "0.9903 \u00b1 0.0090",
+      "Macro-P": "0.9969 \u00b1 0.0028",
+      "Macro-R": "0.9875 \u00b1 0.0120",
+      "Macro-F1": "0.9919 \u00b1 0.0078",
+      "Acc (single 5-fold)": "0.9927",
+      "Train s": "0.002",
+      "Pred ms/sample": "0.0647"
+    },
+    "Decision Tree": {
+      "Acc (5x3 CV)": "0.9689 \u00b1 0.0136",
+      "Macro-P": "0.9771 \u00b1 0.0117",
+      "Macro-R": "0.9731 \u00b1 0.0160",
+      "Macro-F1": "0.9743 \u00b1 0.0128",
+      "Acc (single 5-fold)": "0.9723",
+      "Train s": "0.005",
+      "Pred ms/sample": "0.0028"
+    },
+    "MLP (64-32)": {
+      "Acc (5x3 CV)": "1.0000 \u00b1 0.0000",
+      "Macro-P": "1.0000 \u00b1 0.0000",
+      "Macro-R": "1.0000 \u00b1 0.0000",
+      "Macro-F1": "1.0000 \u00b1 0.0000",
+      "Acc (single 5-fold)": "1.0000",
+      "Train s": "1.084",
+      "Pred ms/sample": "0.0160"
+    },
+    "XGBoost": {
+      "Acc (5x3 CV)": "0.9825 \u00b1 0.0132",
+      "Macro-P": "0.9852 \u00b1 0.0101",
+      "Macro-R": "0.9776 \u00b1 0.0163",
+      "Macro-F1": "0.9804 \u00b1 0.0132",
+      "Acc (single 5-fold)": "0.9825",
+      "Train s": "0.339",
+      "Pred ms/sample": "0.0208"
+    }
+  },
+  "significance": {
+    "Logistic Regression": {
+      "wilcoxon_p": 0.0019983829447578717,
+      "mcnemar_p": 0.00634765625,
+      "rf_only_correct": 1,
+      "baseline_only_correct": 11
+    },
+    "SVM (RBF)": {
+      "wilcoxon_p": 0.0012803133760964243,
+      "mcnemar_p": 0.0009765625,
+      "rf_only_correct": 0,
+      "baseline_only_correct": 11
+    },
+    "k-NN (k=5)": {
+      "wilcoxon_p": 0.17884100533042102,
+      "mcnemar_p": 0.210113525390625,
+      "rf_only_correct": 5,
+      "baseline_only_correct": 11
+    },
+    "Decision Tree": {
+      "wilcoxon_p": 0.002014748600923641,
+      "mcnemar_p": 0.03857421875,
+      "rf_only_correct": 10,
+      "baseline_only_correct": 2
+    },
+    "MLP (64-32)": {
+      "wilcoxon_p": 0.0013537037416892056,
+      "mcnemar_p": 0.0009765625,
+      "rf_only_correct": 0,
+      "baseline_only_correct": 11
+    },
+    "XGBoost": {
+      "wilcoxon_p": 0.36824282841616984,
+      "mcnemar_p": 1.0,
+      "rf_only_correct": 7,
+      "baseline_only_correct": 6
+    }
+  },
+  "ablations": [
+    {
+      "group": "reference",
+      "variant": "All 7 features",
+      "acc": "0.9849 \u00b1 0.0112",
+      "macro_f1": "0.9886 \u00b1 0.0086"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- G",
+      "acc": "0.9640 \u00b1 0.0139",
+      "macro_f1": "0.9712 \u00b1 0.0117"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Tc",
+      "acc": "0.9869 \u00b1 0.0127",
+      "macro_f1": "0.9899 \u00b1 0.0101"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Vmp",
+      "acc": "0.9800 \u00b1 0.0119",
+      "macro_f1": "0.9815 \u00b1 0.0111"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Imp",
+      "acc": "0.9849 \u00b1 0.0115",
+      "macro_f1": "0.9884 \u00b1 0.0089"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Pmp",
+      "acc": "0.9859 \u00b1 0.0125",
+      "macro_f1": "0.9894 \u00b1 0.0096"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Voc",
+      "acc": "0.9893 \u00b1 0.0099",
+      "macro_f1": "0.9920 \u00b1 0.0075"
+    },
+    {
+      "group": "drop-one feature",
+      "variant": "- Isc",
+      "acc": "0.9854 \u00b1 0.0132",
+      "macro_f1": "0.9890 \u00b1 0.0103"
+    },
+    {
+      "group": "feature group",
+      "variant": "Electrical only (Vmp,Imp,Pmp,Voc,Isc)",
+      "acc": "0.9567 \u00b1 0.0160",
+      "macro_f1": "0.9652 \u00b1 0.0139"
+    },
+    {
+      "group": "feature group",
+      "variant": "Environmental only (G,Tc)",
+      "acc": "0.4968 \u00b1 0.0307",
+      "macro_f1": "0.3474 \u00b1 0.0307"
+    },
+    {
+      "group": "feature group",
+      "variant": "No derived Pmp (=Vmp*Imp)",
+      "acc": "0.9859 \u00b1 0.0125",
+      "macro_f1": "0.9894 \u00b1 0.0096"
+    },
+    {
+      "group": "feature group",
+      "variant": "No environmental (G,Tc)",
+      "acc": "0.9567 \u00b1 0.0160",
+      "macro_f1": "0.9652 \u00b1 0.0139"
+    },
+    {
+      "group": "engineered",
+      "variant": "+ FF, Vmp/Voc, Imp/Isc",
+      "acc": "0.9762 \u00b1 0.0128",
+      "macro_f1": "0.9821 \u00b1 0.0098"
+    },
+    {
+      "group": "physics regressor",
+      "variant": "+ regressor loss% and dP (in-fold, no leakage)",
+      "acc": "0.9976 \u00b1 0.0053",
+      "macro_f1": "0.9968 \u00b1 0.0069"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "10 trees",
+      "acc": "0.9800 \u00b1 0.0115",
+      "macro_f1": "0.9842 \u00b1 0.0096"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "25 trees",
+      "acc": "0.9849 \u00b1 0.0101",
+      "macro_f1": "0.9886 \u00b1 0.0078"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "50 trees",
+      "acc": "0.9854 \u00b1 0.0087",
+      "macro_f1": "0.9892 \u00b1 0.0065"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "100 trees",
+      "acc": "0.9849 \u00b1 0.0112",
+      "macro_f1": "0.9886 \u00b1 0.0086"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "200 trees",
+      "acc": "0.9854 \u00b1 0.0120",
+      "macro_f1": "0.9891 \u00b1 0.0092"
+    },
+    {
+      "group": "n_estimators",
+      "variant": "500 trees",
+      "acc": "0.9878 \u00b1 0.0109",
+      "macro_f1": "0.9910 \u00b1 0.0082"
+    },
+    {
+      "group": "max_depth",
+      "variant": "depth=2",
+      "acc": "0.8054 \u00b1 0.0131",
+      "macro_f1": "0.7619 \u00b1 0.0164"
+    },
+    {
+      "group": "max_depth",
+      "variant": "depth=3",
+      "acc": "0.8725 \u00b1 0.0103",
+      "macro_f1": "0.8440 \u00b1 0.0235"
+    },
+    {
+      "group": "max_depth",
+      "variant": "depth=5",
+      "acc": "0.9367 \u00b1 0.0188",
+      "macro_f1": "0.9451 \u00b1 0.0196"
+    },
+    {
+      "group": "max_depth",
+      "variant": "depth=10",
+      "acc": "0.9839 \u00b1 0.0127",
+      "macro_f1": "0.9878 \u00b1 0.0100"
+    },
+    {
+      "group": "max_depth",
+      "variant": "depth=None",
+      "acc": "0.9849 \u00b1 0.0112",
+      "macro_f1": "0.9886 \u00b1 0.0086"
+    },
+    {
+      "group": "class weights",
+      "variant": "None",
+      "acc": "0.9849 \u00b1 0.0112",
+      "macro_f1": "0.9886 \u00b1 0.0086"
+    },
+    {
+      "group": "class weights",
+      "variant": "balanced",
+      "acc": "0.9937 \u00b1 0.0082",
+      "macro_f1": "0.9947 \u00b1 0.0068"
+    }
+  ],
+  "shap_mean_abs": {
+    "Aging": {
+      "G": 0.01172463207147462,
+      "Tc": 0.06030838178139858,
+      "Vmp": 0.46721520261637195,
+      "Imp": 0.03344686224606003,
+      "Pmp": 0.09447445132578576,
+      "Voc": 0.15172764577284392,
+      "Isc": 0.042631217319411926
+    },
+    "Healthy": {
+      "G": 0.06569045322289209,
+      "Tc": 0.040118189592779276,
+      "Vmp": 0.20639846258132763,
+      "Imp": 0.035899418438993365,
+      "Pmp": 0.09202203813231494,
+      "Voc": 0.06968108834621155,
+      "Isc": 0.04789192974382248
+    },
+    "Open-Circuit": {
+      "G": 0.0006871824925903327,
+      "Tc": 0.00581303848376707,
+      "Vmp": 0.15429095703440382,
+      "Imp": 0.16609889620899135,
+      "Pmp": 0.23455613021089522,
+      "Voc": 0.05075821996339358,
+      "Isc": 0.2993432484248098
+    },
+    "Overheating": {
+      "G": 0.0014474967508224669,
+      "Tc": 0.2733014218592546,
+      "Vmp": 0.24665327438538465,
+      "Imp": 0.013281799541351808,
+      "Pmp": 0.08243161182749904,
+      "Voc": 0.3027371044653142,
+      "Isc": 0.014564168415808054
+    },
+    "Shading/Soiling": {
+      "G": 0.13993409300574045,
+      "Tc": 0.06608670173547398,
+      "Vmp": 0.20739498985085114,
+      "Imp": 0.0767349970771653,
+      "Pmp": 0.12753924903788727,
+      "Voc": 0.09569432668065811,
+      "Isc": 0.0873307441614661
+    },
+    "Short-Circuit": {
+      "G": 0.0010153542610211869,
+      "Tc": 0.026451469739406253,
+      "Vmp": 0.1980891291980382,
+      "Imp": 0.04520507450524855,
+      "Pmp": 0.3359314120809862,
+      "Voc": 0.27248632257261696,
+      "Isc": 0.046557464180952746
+    },
+    "ALL (pred-class)": {
+      "G": 0.055591495636055185,
+      "Tc": 0.05758339686597778,
+      "Vmp": 0.2344780851491508,
+      "Imp": 0.05217213666892217,
+      "Pmp": 0.12715175956949246,
+      "Voc": 0.11151679456706703,
+      "Isc": 0.07277314292742339
+    }
+  },
+  "shap_per_sample": [
+    {
+      "cls": "Aging",
+      "sample": 19,
+      "rank": 1,
+      "feature": "Vmp",
+      "value": 22.74,
+      "phi": 0.44789279985441366,
+      "share": 0.5070763869106245
+    },
+    {
+      "cls": "Aging",
+      "sample": 19,
+      "rank": 2,
+      "feature": "Voc",
+      "value": 34.77,
+      "phi": 0.22165450378098073,
+      "share": 0.250943451103168
+    },
+    {
+      "cls": "Aging",
+      "sample": 19,
+      "rank": 3,
+      "feature": "Pmp",
+      "value": 111.52,
+      "phi": 0.09678175791229246,
+      "share": 0.10957029033950968
+    },
+    {
+      "cls": "Healthy",
+      "sample": 0,
+      "rank": 1,
+      "feature": "Vmp",
+      "value": 32.47,
+      "phi": 0.23374832460132963,
+      "share": 0.34017879907120335
+    },
+    {
+      "cls": "Healthy",
+      "sample": 0,
+      "rank": 2,
+      "feature": "Pmp",
+      "value": 291.57,
+      "phi": 0.16078326959961106,
+      "share": 0.2339912367561247
+    },
+    {
+      "cls": "Healthy",
+      "sample": 0,
+      "rank": 3,
+      "feature": "G",
+      "value": 952.9,
+      "phi": -0.08997001355641412,
+      "share": 0.13093523222568906
+    },
+    {
+      "cls": "Open-Circuit",
+      "sample": 15,
+      "rank": 1,
+      "feature": "Isc",
+      "value": 0.1,
+      "phi": 0.3008768260161507,
+      "share": 0.3300990227129592
+    },
+    {
+      "cls": "Open-Circuit",
+      "sample": 15,
+      "rank": 2,
+      "feature": "Pmp",
+      "value": 0.03,
+      "phi": 0.23440941511416902,
+      "share": 0.25717606725800146
+    },
+    {
+      "cls": "Open-Circuit",
+      "sample": 15,
+      "rank": 3,
+      "feature": "Imp",
+      "value": 0.05,
+      "phi": 0.16399476203315388,
+      "share": 0.17992249982816072
+    },
+    {
+      "cls": "Overheating",
+      "sample": 10,
+      "rank": 1,
+      "feature": "Voc",
+      "value": 19.33,
+      "phi": 0.29694368983352226,
+      "share": 0.3176686722618149
+    },
+    {
+      "cls": "Overheating",
+      "sample": 10,
+      "rank": 2,
+      "feature": "Tc",
+      "value": 70.4,
+      "phi": 0.26785462770794555,
+      "share": 0.2865493588729563
+    },
+    {
+      "cls": "Overheating",
+      "sample": 10,
+      "rank": 3,
+      "feature": "Vmp",
+      "value": 16.27,
+      "phi": 0.2508316482979975,
+      "share": 0.26833827221834455
+    },
+    {
+      "cls": "Shading/Soiling",
+      "sample": 35,
+      "rank": 1,
+      "feature": "Vmp",
+      "value": 29.21,
+      "phi": 0.3130742378851897,
+      "share": 0.36588445046551943
+    },
+    {
+      "cls": "Shading/Soiling",
+      "sample": 35,
+      "rank": 2,
+      "feature": "G",
+      "value": 848.68,
+      "phi": 0.14670160479918082,
+      "share": 0.1714476298559003
+    },
+    {
+      "cls": "Shading/Soiling",
+      "sample": 35,
+      "rank": 3,
+      "feature": "Pmp",
+      "value": 116.71,
+      "phi": 0.10615389200635796,
+      "share": 0.12406021876436148
+    },
+    {
+      "cls": "Short-Circuit",
+      "sample": 14,
+      "rank": 1,
+      "feature": "Pmp",
+      "value": 7.31,
+      "phi": 0.33663474297378515,
+      "share": 0.36350205548346043
+    },
+    {
+      "cls": "Short-Circuit",
+      "sample": 14,
+      "rank": 2,
+      "feature": "Voc",
+      "value": 0.9,
+      "phi": 0.2749575762472088,
+      "share": 0.29690234363122153
+    },
+    {
+      "cls": "Short-Circuit",
+      "sample": 14,
+      "rank": 3,
+      "feature": "Vmp",
+      "value": 0.79,
+      "phi": 0.19425067622448328,
+      "share": 0.20975410756147206
+    }
+  ],
+  "shap_top3_frequency": {
+    "Aging": {
+      "G": 0.0,
+      "Tc": 0.2625,
+      "Vmp": 1.0,
+      "Imp": 0.0,
+      "Pmp": 0.9375,
+      "Voc": 0.675,
+      "Isc": 0.125
+    },
+    "Healthy": {
+      "G": 0.4514285714285714,
+      "Tc": 0.18857142857142858,
+      "Vmp": 0.9942857142857143,
+      "Imp": 0.0,
+      "Pmp": 0.6,
+      "Voc": 0.6228571428571429,
+      "Isc": 0.14285714285714285
+    },
+    "Open-Circuit": {
+      "G": 0.0,
+      "Tc": 0.0,
+      "Vmp": 0.0,
+      "Imp": 1.0,
+      "Pmp": 1.0,
+      "Voc": 0.0,
+      "Isc": 1.0
+    },
+    "Overheating": {
+      "G": 0.0,
+      "Tc": 1.0,
+      "Vmp": 1.0,
+      "Imp": 0.0,
+      "Pmp": 0.0,
+      "Voc": 1.0,
+      "Isc": 0.0
+    },
+    "Shading/Soiling": {
+      "G": 0.62,
+      "Tc": 0.11,
+      "Vmp": 0.81,
+      "Imp": 0.11,
+      "Pmp": 0.69,
+      "Voc": 0.47,
+      "Isc": 0.19
+    },
+    "Short-Circuit": {
+      "G": 0.0,
+      "Tc": 0.0,
+      "Vmp": 1.0,
+      "Imp": 0.0,
+      "Pmp": 1.0,
+      "Voc": 1.0,
+      "Isc": 0.0
+    }
+  },
+  "shap_faithfulness": {
+    "top-1": {
+      "Prob. drop: remove SHAP top-k": "0.3362 \u00b1 0.0328",
+      "Prob. drop: remove random k": "0.1323 \u00b1 0.0046"
+    },
+    "top-2": {
+      "Prob. drop: remove SHAP top-k": "0.5752 \u00b1 0.0333",
+      "Prob. drop: remove random k": "0.2472 \u00b1 0.0102"
+    },
+    "top-3": {
+      "Prob. drop: remove SHAP top-k": "0.6320 \u00b1 0.0208",
+      "Prob. drop: remove random k": "0.3421 \u00b1 0.0107"
+    }
+  },
+  "shap_stability": {
+    "mean Jaccard top-3": {
+      "Aging": 0.898375,
+      "Healthy": 0.7655428571428572,
+      "Open-Circuit": 0.8008333333333333,
+      "Overheating": 1.0,
+      "Shading/Soiling": 0.783,
+      "Short-Circuit": 1.0,
+      "ALL": 0.8192116788321169
+    }
+  },
+  "ood": {
+    "ECE_maxprob": 0.04324087591240887,
+    "sweep": {
+      "unknown_detected": {
+        "0.3": 0.26666666666666666,
+        "0.35": 0.8666666666666667,
+        "0.4": 1.0,
+        "0.45": 1.0,
+        "0.5": 1.0,
+        "0.55": 1.0,
+        "0.6": 1.0,
+        "0.65": 1.0,
+        "0.7": 1.0,
+        "0.8": 1.0,
+        "0.9": 1.0
+      },
+      "known_rejected": {
+        "0.3": 0.0,
+        "0.35": 0.0,
+        "0.4": 0.0,
+        "0.45": 0.00145985401459854,
+        "0.5": 0.004379562043795621,
+        "0.55": 0.014598540145985401,
+        "0.6": 0.021897810218978103,
+        "0.65": 0.032116788321167884,
+        "0.7": 0.03795620437956204,
+        "0.8": 0.08467153284671533,
+        "0.9": 0.181021897810219
+      },
+      "accuracy_on_accepted": {
+        "0.3": 0.983941605839416,
+        "0.35": 0.983941605839416,
+        "0.4": 0.983941605839416,
+        "0.45": 0.9839181286549707,
+        "0.5": 0.9853372434017595,
+        "0.55": 0.9896296296296296,
+        "0.6": 0.9925373134328358,
+        "0.65": 0.9939668174962293,
+        "0.7": 0.9954476479514416,
+        "0.8": 1.0,
+        "0.9": 1.0
+      }
+    },
+    "auroc": {
+      "1 - max prob": 1.0,
+      "entropy": 0.9999999999999999,
+      "IsolationForest": 0.8494403892944039
+    },
+    "rej_by_class": {
+      "Aging": 0.0125,
+      "Healthy": 0.005714285714285714,
+      "Open-Circuit": 0.0,
+      "Overheating": 0.0,
+      "Shading/Soiling": 0.0,
+      "Short-Circuit": 0.0
+    },
+    "loco": {
+      "n_unknown": {
+        "Aging": 80,
+        "Healthy": 350,
+        "Open-Circuit": 60,
+        "Overheating": 45,
+        "Shading/Soiling": 100,
+        "Short-Circuit": 50
+      },
+      "AUROC": {
+        "Aging": 0.978202479338843,
+        "Healthy": 0.851321961620469,
+        "Open-Circuit": 1.0,
+        "Overheating": 0.8686631944444445,
+        "Shading/Soiling": 0.9448290598290598,
+        "Short-Circuit": 1.0
+      },
+      "detected_at_0_50": {
+        "Aging": 0.0375,
+        "Healthy": 0.0,
+        "Open-Circuit": 1.0,
+        "Overheating": 0.0,
+        "Shading/Soiling": 0.0,
+        "Short-Circuit": 0.42
+      },
+      "known_rejected_at_0_50": {
+        "Aging": 0.0,
+        "Healthy": 0.0,
+        "Open-Circuit": 0.0,
+        "Overheating": 0.0,
+        "Shading/Soiling": 0.0,
+        "Short-Circuit": 0.0
+      }
+    }
+  },
+  "extras": {
+    "per_class": {
+      "precision": {
+        "Aging": 1.0,
+        "Healthy": 0.9774647887323944,
+        "Open-Circuit": 1.0,
+        "Overheating": 1.0,
+        "Shading/Soiling": 0.968421052631579,
+        "Short-Circuit": 1.0
+      },
+      "recall": {
+        "Aging": 1.0,
+        "Healthy": 0.9914285714285714,
+        "Open-Circuit": 1.0,
+        "Overheating": 1.0,
+        "Shading/Soiling": 0.92,
+        "Short-Circuit": 1.0
+      },
+      "f1": {
+        "Aging": 1.0,
+        "Healthy": 0.9843971631205674,
+        "Open-Circuit": 1.0,
+        "Overheating": 1.0,
+        "Shading/Soiling": 0.9435897435897436,
+        "Short-Circuit": 1.0
+      },
+      "support": {
+        "Aging": 80,
+        "Healthy": 350,
+        "Open-Circuit": 60,
+        "Overheating": 45,
+        "Shading/Soiling": 100,
+        "Short-Circuit": 50
+      }
+    },
+    "rf_oof_accuracy": 0.983941605839416,
+    "wilson95": [
+      0.9714753206734884,
+      0.9910101041324466
+    ],
+    "predict_latency_ms_single_sample_1thread": {
+      "median": 13.370749991736375,
+      "p95": 23.36920499947155
+    },
+    "treeshap_latency_ms_single_sample": {
+      "median": 1.6031999984988943,
+      "p95": 2.9352850149734877
+    },
+    "model_size_kB_pickle": 688.7138671875,
+    "pca_explained_variance_ratio": [
+      0.5275009701978802,
+      0.25905234054697035
+    ]
+  },
+  "physics": {
+    "regressor_heldout_healthy": {
+      "fold": 7.0,
+      "MAE_W": 4.197488195679152,
+      "MAPE_pct": 2.3982755046183875,
+      "R2": 0.9939896909518411
+    },
+    "severity_by_class": {
+      "Aging": {
+        "Low(<10%)": 0,
+        "Medium(10-30%)": 40,
+        "High(>30%)": 40
+      },
+      "Healthy": {
+        "Low(<10%)": 348,
+        "Medium(10-30%)": 2,
+        "High(>30%)": 0
+      },
+      "Open-Circuit": {
+        "Low(<10%)": 0,
+        "Medium(10-30%)": 0,
+        "High(>30%)": 60
+      },
+      "Overheating": {
+        "Low(<10%)": 0,
+        "Medium(10-30%)": 0,
+        "High(>30%)": 45
+      },
+      "Shading/Soiling": {
+        "Low(<10%)": 0,
+        "Medium(10-30%)": 6,
+        "High(>30%)": 94
+      },
+      "Short-Circuit": {
+        "Low(<10%)": 0,
+        "Medium(10-30%)": 0,
+        "High(>30%)": 50
+      }
+    },
+    "loss_by_class": {
+      "loss_pct_mean": {
+        "Aging": 29.25103150039783,
+        "Healthy": 1.2491769156780368,
+        "Open-Circuit": 99.96643027783058,
+        "Overheating": 49.055487155704256,
+        "Shading/Soiling": 41.41754481709491,
+        "Short-Circuit": 98.43648198266261
+      },
+      "loss_pct_std": {
+        "Aging": 4.687079758858879,
+        "Healthy": 1.887818045233223,
+        "Open-Circuit": 0.037590886555937036,
+        "Overheating": 4.668218213972284,
+        "Shading/Soiling": 8.33399567679651,
+        "Short-Circuit": 1.0930955744710857
+      },
+      "loss_pct_median": {
+        "Aging": 29.977873897313,
+        "Healthy": 0.006457728031573708,
+        "Open-Circuit": 99.97405241280401,
+        "Overheating": 49.05546016465847,
+        "Shading/Soiling": 39.92606800263505,
+        "Short-Circuit": 98.47717805224909
+      },
+      "dP_W_mean": {
+        "Aging": 56.40269971142012,
+        "Healthy": 2.1868264127197254,
+        "Open-Circuit": 174.0860850421599,
+        "Overheating": 83.9021097513351,
+        "Shading/Soiling": 83.37897621004453,
+        "Short-Circuit": 181.04217249167567
+      },
+      "dP_W_std": {
+        "Aging": 20.43950852989393,
+        "Healthy": 3.129500929514085,
+        "Open-Circuit": 60.08647632619699,
+        "Overheating": 32.24931714020877,
+        "Shading/Soiling": 33.016631119679104,
+        "Short-Circuit": 75.13060983124365
+      },
+      "dP_W_median": {
+        "Aging": 53.6530363726551,
+        "Healthy": 0.0103336994949359,
+        "Open-Circuit": 178.15606210317463,
+        "Overheating": 75.94042597763348,
+        "Shading/Soiling": 76.50589032647906,
+        "Short-Circuit": 174.24743577561327
+      }
+    }
+  }
+}

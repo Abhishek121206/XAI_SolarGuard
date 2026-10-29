@@ -1,0 +1,7 @@
+cls,Low(<10%),Medium(10-30%),High(>30%)
+Aging,0,40,40
+Healthy,348,2,0
+Open-Circuit,0,0,60
+Overheating,0,0,45
+Shading/Soiling,0,6,94
+Short-Circuit,0,0,50

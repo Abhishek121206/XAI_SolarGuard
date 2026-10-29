@@ -1,0 +1,8 @@
+,mean Jaccard top-3
+Aging,0.898375
+Healthy,0.7655428571428572
+Open-Circuit,0.8008333333333333
+Overheating,1.0
+Shading/Soiling,0.783
+Short-Circuit,1.0
+ALL,0.8192116788321169

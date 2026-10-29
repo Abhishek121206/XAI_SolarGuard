@@ -1,0 +1,7 @@
+,Aging,Healthy,Open-Circuit,Overheating,Shading/Soiling,Short-Circuit
+Aging,80,0,0,0,0,0
+Healthy,0,347,0,0,3,0
+Open-Circuit,0,0,60,0,0,0
+Overheating,0,0,0,45,0,0
+Shading/Soiling,0,8,0,0,92,0
+Short-Circuit,0,0,0,0,0,50

@@ -1,0 +1,1454 @@
+{
+  "total_panels": 700,
+  "panels_healthy": 350,
+  "panels_needing_attention": 350,
+  "estimated_energy_lost_kwh": 39.1,
+  "urgent_panels_count": 289,
+  "urgent_panels_list": [
+    {
+      "panel_id": "PANEL-601",
+      "status": "aging",
+      "reason": "Voltage (22.7V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-497",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.34V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-457",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.45V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-774",
+      "status": "overheating",
+      "reason": "Voltage (19.33V) dropped sharply because cell temperature reached 70.4\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-700",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 7.31) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-671",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-547",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 786.93 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-728",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 5.56) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-600",
+      "status": "aging",
+      "reason": "Voltage (22.74V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-461",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 61.46) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-658",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.01A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-579",
+      "status": "aging",
+      "reason": "Voltage (22.1V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-634",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-533",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.21V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-660",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-679",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.03A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-751",
+      "status": "overheating",
+      "reason": "Voltage (19.47V) dropped sharply because cell temperature reached 79.87\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-697",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.3) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-768",
+      "status": "overheating",
+      "reason": "Voltage (20.83V) dropped sharply because cell temperature reached 75.25\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-453",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.4V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-642",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-737",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 5.11) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-769",
+      "status": "overheating",
+      "reason": "Voltage (22.84V) dropped sharply because cell temperature reached 62.41\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-470",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.89V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-767",
+      "status": "overheating",
+      "reason": "Voltage (21.58V) dropped sharply because cell temperature reached 61.08\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-650",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.15A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-773",
+      "status": "overheating",
+      "reason": "Voltage (21.85V) dropped sharply because cell temperature reached 75.56\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-574",
+      "status": "aging",
+      "reason": "Voltage (22.28V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-706",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 8.22) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-782",
+      "status": "overheating",
+      "reason": "Voltage (19.68V) dropped sharply because cell temperature reached 61.4\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-702",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.12) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-491",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 56.72) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-727",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.81) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-617",
+      "status": "aging",
+      "reason": "Voltage (24.33V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-756",
+      "status": "overheating",
+      "reason": "Voltage (20.5V) dropped sharply because cell temperature reached 84.55\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-742",
+      "status": "overheating",
+      "reason": "Voltage (21.03V) dropped sharply because cell temperature reached 59.06\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-510",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 749.9 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-644",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-496",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 934.02 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-683",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-454",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 942.46 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-732",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.54) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-583",
+      "status": "aging",
+      "reason": "Voltage (22.39V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-735",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.14) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-525",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.6V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-532",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 564.18 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-770",
+      "status": "overheating",
+      "reason": "Voltage (22.44V) dropped sharply because cell temperature reached 74.9\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-646",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.01A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-678",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.04A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-531",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 981.03 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-478",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.17V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-489",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.88V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-538",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.96V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-686",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.12A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-537",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.23V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-681",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.0A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-463",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 768.25 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-719",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.96) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-680",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.12A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-757",
+      "status": "overheating",
+      "reason": "Voltage (18.35V) dropped sharply because cell temperature reached 74.1\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-714",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 10.11) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-565",
+      "status": "aging",
+      "reason": "Voltage (22.05V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-509",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 942.24 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-729",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 8.15) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-687",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.03A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-568",
+      "status": "aging",
+      "reason": "Voltage (23.78V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-481",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.98V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-668",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-464",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 821.16 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-740",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.04) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-712",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.37) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-738",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.51) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-669",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.09A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-635",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-458",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.14V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-750",
+      "status": "overheating",
+      "reason": "Voltage (21.44V) dropped sharply because cell temperature reached 68.38\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-521",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.49V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-557",
+      "status": "aging",
+      "reason": "Voltage (22.71V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-545",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.6V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-554",
+      "status": "aging",
+      "reason": "Voltage (22.72V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-455",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 58.17) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-637",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.13A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-677",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.12A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-482",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.26V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-755",
+      "status": "overheating",
+      "reason": "Voltage (20.07V) dropped sharply because cell temperature reached 71.26\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-711",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 5.94) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-672",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-689",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-645",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-684",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.05A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-722",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.48) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-783",
+      "status": "overheating",
+      "reason": "Voltage (17.62V) dropped sharply because cell temperature reached 79.95\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-500",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 820.1 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-676",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-476",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 621.28 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-785",
+      "status": "overheating",
+      "reason": "Voltage (19.16V) dropped sharply because cell temperature reached 64.36\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-614",
+      "status": "aging",
+      "reason": "Voltage (24.01V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-717",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.0) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-692",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.29) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-673",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.0A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-632",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.09A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-710",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.15) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-594",
+      "status": "aging",
+      "reason": "Voltage (22.0V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-483",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 962.11 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-527",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.82V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-733",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.85) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-566",
+      "status": "aging",
+      "reason": "Voltage (24.17V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-685",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-622",
+      "status": "aging",
+      "reason": "Voltage (23.08V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-633",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-451",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 1021.22 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-726",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.31) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-653",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-707",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.84) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-529",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 57.18) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-746",
+      "status": "overheating",
+      "reason": "Voltage (23.0V) dropped sharply because cell temperature reached 69.87\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-494",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 714.07 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-763",
+      "status": "overheating",
+      "reason": "Voltage (18.3V) dropped sharply because cell temperature reached 76.71\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-752",
+      "status": "overheating",
+      "reason": "Voltage (21.53V) dropped sharply because cell temperature reached 73.42\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-620",
+      "status": "aging",
+      "reason": "Voltage (22.88V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-581",
+      "status": "aging",
+      "reason": "Voltage (23.84V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-512",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.78V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-535",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 962.68 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-640",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-468",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 1021.26 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-456",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.9V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-544",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.43V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-506",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.23V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-518",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 942.88 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-771",
+      "status": "overheating",
+      "reason": "Voltage (18.92V) dropped sharply because cell temperature reached 80.54\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-718",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.61) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-780",
+      "status": "overheating",
+      "reason": "Voltage (20.42V) dropped sharply because cell temperature reached 62.97\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-743",
+      "status": "overheating",
+      "reason": "Voltage (19.77V) dropped sharply because cell temperature reached 79.15\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-613",
+      "status": "aging",
+      "reason": "Voltage (23.24V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-744",
+      "status": "overheating",
+      "reason": "Voltage (18.61V) dropped sharply because cell temperature reached 81.96\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-552",
+      "status": "aging",
+      "reason": "Voltage (22.82V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-530",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.64V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-499",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.96V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-777",
+      "status": "overheating",
+      "reason": "Voltage (20.19V) dropped sharply because cell temperature reached 70.12\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-741",
+      "status": "overheating",
+      "reason": "Voltage (20.3V) dropped sharply because cell temperature reached 62.84\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-550",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.3V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-513",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.79V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-745",
+      "status": "overheating",
+      "reason": "Voltage (18.75V) dropped sharply because cell temperature reached 61.86\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-779",
+      "status": "overheating",
+      "reason": "Voltage (18.73V) dropped sharply because cell temperature reached 69.83\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-649",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.03A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-465",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.1V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-772",
+      "status": "overheating",
+      "reason": "Voltage (22.06V) dropped sharply because cell temperature reached 65.12\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-475",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.87V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-704",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.42) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-582",
+      "status": "aging",
+      "reason": "Voltage (23.49V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-615",
+      "status": "aging",
+      "reason": "Voltage (24.23V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-695",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.08) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-703",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.57) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-526",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.19V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-546",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 60.66) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-549",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.5V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-776",
+      "status": "overheating",
+      "reason": "Voltage (23.16V) dropped sharply because cell temperature reached 65.24\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-682",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-753",
+      "status": "overheating",
+      "reason": "Voltage (24.3V) dropped sharply because cell temperature reached 60.5\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-636",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.14A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-548",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.0V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-580",
+      "status": "aging",
+      "reason": "Voltage (22.01V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-466",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.9V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-484",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.64V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-731",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.01) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-699",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.31) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-705",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.4) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-659",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.05A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-522",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 951.98 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-716",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.9) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-629",
+      "status": "aging",
+      "reason": "Voltage (21.75V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-508",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 653.84 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-775",
+      "status": "overheating",
+      "reason": "Voltage (22.33V) dropped sharply because cell temperature reached 59.78\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-504",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.48V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-760",
+      "status": "overheating",
+      "reason": "Voltage (21.21V) dropped sharply because cell temperature reached 79.6\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-589",
+      "status": "aging",
+      "reason": "Voltage (24.39V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-639",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.01A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-748",
+      "status": "overheating",
+      "reason": "Voltage (21.07V) dropped sharply because cell temperature reached 65.76\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-553",
+      "status": "aging",
+      "reason": "Voltage (23.88V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-734",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.57) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-628",
+      "status": "aging",
+      "reason": "Voltage (23.39V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-469",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 59.6) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-761",
+      "status": "overheating",
+      "reason": "Voltage (16.9V) dropped sharply because cell temperature reached 80.81\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-688",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-515",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.69V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-534",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 45.16) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-655",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.03A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-541",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.08V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-766",
+      "status": "overheating",
+      "reason": "Voltage (22.84V) dropped sharply because cell temperature reached 64.97\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-709",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.94) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-460",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 1014.09 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-721",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.47) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-524",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 743.43 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-517",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.2V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-452",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 885.37 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-551",
+      "status": "aging",
+      "reason": "Voltage (22.18V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-749",
+      "status": "overheating",
+      "reason": "Voltage (21.91V) dropped sharply because cell temperature reached 72.68\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-624",
+      "status": "aging",
+      "reason": "Voltage (24.13V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-520",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 787.97 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-543",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 683.41 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-723",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.12) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-648",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.09A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-564",
+      "status": "aging",
+      "reason": "Voltage (21.99V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-694",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.04) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-495",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (27.64V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-472",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 775.88 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-501",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.47V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-539",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.31V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-516",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.44V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-720",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.77) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-503",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 657.11 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-651",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.07A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-643",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.14A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-736",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.41) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-631",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.0A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-739",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.65) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-638",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-487",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.54V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-778",
+      "status": "overheating",
+      "reason": "Voltage (17.0V) dropped sharply because cell temperature reached 81.68\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-610",
+      "status": "aging",
+      "reason": "Voltage (24.81V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-542",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 42.18) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-708",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 6.06) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-474",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.24V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-652",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.13A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-511",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 74.68) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-725",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.82) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-459",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 576.03 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-477",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.31V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-485",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.03V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-765",
+      "status": "overheating",
+      "reason": "Voltage (20.44V) dropped sharply because cell temperature reached 72.01\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-670",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-573",
+      "status": "aging",
+      "reason": "Voltage (22.47V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-758",
+      "status": "overheating",
+      "reason": "Voltage (20.47V) dropped sharply because cell temperature reached 59.96\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-730",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.47) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-696",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 3.24) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-657",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.0A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-625",
+      "status": "aging",
+      "reason": "Voltage (22.83V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-641",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.05A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-698",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.14) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-690",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.02A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-759",
+      "status": "overheating",
+      "reason": "Voltage (23.62V) dropped sharply because cell temperature reached 63.77\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-664",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.16A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-675",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-654",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-713",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 4.18) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-498",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (30.17V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-691",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.34) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-724",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 2.79) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-647",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-674",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.11A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-507",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 1026.21 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-590",
+      "status": "aging",
+      "reason": "Voltage (23.63V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-479",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (27.66V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-519",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 43.36) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-492",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.58V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-693",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 1.58) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-781",
+      "status": "overheating",
+      "reason": "Voltage (18.86V) dropped sharply because cell temperature reached 74.1\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-593",
+      "status": "aging",
+      "reason": "Voltage (25.28V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-480",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.86V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-656",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.1A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-502",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (28.54V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-577",
+      "status": "aging",
+      "reason": "Voltage (25.31V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-666",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.04A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-490",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 43.87) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-754",
+      "status": "overheating",
+      "reason": "Voltage (19.86V) dropped sharply because cell temperature reached 66.67\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-662",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.12A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-609",
+      "status": "aging",
+      "reason": "Voltage (23.0V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-528",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 44.5) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-467",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (31.18V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-665",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.06A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-701",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.0) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-488",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 762.49 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-747",
+      "status": "overheating",
+      "reason": "Voltage (22.16V) dropped sharply because cell temperature reached 67.04\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-585",
+      "status": "aging",
+      "reason": "Voltage (23.34V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-784",
+      "status": "overheating",
+      "reason": "Voltage (20.49V) dropped sharply because cell temperature reached 80.97\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-605",
+      "status": "aging",
+      "reason": "Voltage (23.15V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-667",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-663",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.13A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-575",
+      "status": "aging",
+      "reason": "Voltage (22.93V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-661",
+      "status": "open-circuit",
+      "reason": "Current is near zero (0.08A) despite active sunlight, indicating a broken connection or unplugged wire."
+    },
+    {
+      "panel_id": "PANEL-486",
+      "status": "shading/soiling",
+      "reason": "Operating voltage (29.23V) is lower than expected for standard healthy panel output."
+    },
+    {
+      "panel_id": "PANEL-514",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 1034.29 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-592",
+      "status": "aging",
+      "reason": "Voltage (23.21V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-762",
+      "status": "overheating",
+      "reason": "Voltage (20.42V) dropped sharply because cell temperature reached 66.89\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-764",
+      "status": "overheating",
+      "reason": "Voltage (20.29V) dropped sharply because cell temperature reached 73.34\u00b0C."
+    },
+    {
+      "panel_id": "PANEL-473",
+      "status": "shading/soiling",
+      "reason": "Sunlight intensity is 771.31 W/m\u00b2, but generated power is lower than expected for this irradiance."
+    },
+    {
+      "panel_id": "PANEL-567",
+      "status": "aging",
+      "reason": "Voltage (23.42V) is lower than normal specs, pointing to internal panel wear over time."
+    },
+    {
+      "panel_id": "PANEL-715",
+      "status": "short-circuit",
+      "reason": "Feature p_mp (value: 0.0) contributed strongly to this fault diagnosis."
+    },
+    {
+      "panel_id": "PANEL-536",
+      "status": "shading/soiling",
+      "reason": "Feature p_mp (value: 52.87) contributed strongly to this fault diagnosis."
+    }
+  ]
+}

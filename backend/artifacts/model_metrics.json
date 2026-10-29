@@ -1,0 +1,88 @@
+{
+  "cv_mean_accuracy_pct": 98.39,
+  "confusion_matrix": [
+    [
+      80,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      347,
+      0,
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      60,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      45,
+      0,
+      0
+    ],
+    [
+      0,
+      8,
+      0,
+      0,
+      92,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      50
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "Aging",
+    "Healthy",
+    "Open-circuit",
+    "Overheating",
+    "Shading/soiling",
+    "Short-circuit"
+  ],
+  "dataset_info": {
+    "file_name": "pv_fault_dataset.csv",
+    "is_synthetic": false,
+    "sample_count": 700,
+    "reading_type": "Single Spot Readings",
+    "columns": [
+      "panel_id",
+      "irradiance",
+      "temperature",
+      "v_mp",
+      "i_mp",
+      "p_mp",
+      "v_oc",
+      "i_sc",
+      "fault_label",
+      "data_source"
+    ],
+    "fault_class_distribution": {
+      "healthy": 350,
+      "shading/soiling": 100,
+      "aging": 80,
+      "open-circuit": 60,
+      "short-circuit": 50,
+      "overheating": 45,
+      "unknown": 15
+    }
+  }
+}
