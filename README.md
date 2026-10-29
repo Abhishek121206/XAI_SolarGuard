@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XAI-SolarGuard ☀️🛡️
 > **Solar Station Fault Monitoring, Explainable AI (XAI) Diagnosis & Action Guidance System**
 
@@ -99,3 +100,7 @@ Simply run the included `start.ps1` script:
 1. **Small Dataset**: The model is trained on 700 samples (synthetic / IEEE DataPort baseline). Further field data collection is recommended for large utility-scale deployment.
 2. **Rule-Based Recommendations**: Action steps are generated from an expert lookup table based on fault classifications and severity thresholds.
 3. **Engineering Support Disclaimer**: XAI-SolarGuard is an assistive decision-support tool for station operators. It supports, but does **not** replace, a certified solar electrical engineer.
+=======
+# XAI_SolarGuard
+XAI-SolarGuard is a minimalist, web-based explainable AI system designed specifically for non-technical solar station personnel (station in-charge, security guards, on-site operators). It monitors solar panel readings in real time, flags electrical and physical faults, explains **WHY** using plain-language SHAP feature attributions.
+>>>>>>> 00741455882933a432ed95184d633cd7386b4fc0
